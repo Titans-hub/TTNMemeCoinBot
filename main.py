@@ -128,6 +128,6 @@ def show_referrals(message):
     bot.send_message(message.chat.id, f"👥 You referred {count}/5 users.")
 
 # ==== POLLING START ====
-bot.remove_webhook()
+#bot.remove_webhook()
 bot.infinity_polling()
 keep_alive()
