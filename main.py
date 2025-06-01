@@ -2,6 +2,7 @@ import telebot
 from telebot import types
 import os
 import json
+from keep_alive import keep_alive
 
 # ==== CONFIG ====
 BOT_TOKEN = '7329361068:AAE7-6u7RC0jqouIvLAdpaV6xtjXWJEcN-w'
@@ -128,3 +129,4 @@ def show_referrals(message):
 
 # ==== POLLING START ====
 bot.infinity_polling()
+keep_alive()
